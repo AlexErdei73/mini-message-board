@@ -20,4 +20,9 @@ router.get("/", function (req, res, next) {
   res.render("index", { title: "The Odin Message Board", messages: messages });
 });
 
+/* GET new message page */
+router.get("/new", function (req, res, next) {
+  res.render("form", { title: "New message" });
+});
+
 module.exports = router;
