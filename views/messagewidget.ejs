@@ -1,5 +1,7 @@
 <article class="message-widget">
-  <p class="message-text"><%= msg.text %></p>
+  <p class="message-text"><%- msg.text %></p>
   <div class="message-user"><%= msg.user %></div>
-  <div class="message-added"><%= msg.added %></div>
+  <div class="message-added">
+    <%= `Added ${formatDistanceToNow(msg.added)} ago` %>
+  </div>
 </article>
