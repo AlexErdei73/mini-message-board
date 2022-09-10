@@ -7,7 +7,8 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-    <% messages.forEach(function(msg) { %> <%- include("messagewidget", { msg:
+    <% messages.forEach(function(msg) { %> <%- include("_messagewidget", { msg:
     msg }) %> <% }) %>
+    <a href="/new">New message</a>
   </body>
 </html>
