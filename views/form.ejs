@@ -1,14 +1,22 @@
 <%- include("_header") %>
-<form method="POST" action="/new">
-  <div>
-    <label for="text">Message</label>
-    <textarea name="text" id="text"></textarea>
-  </div>
-  <div>
-    <label for="user">User</label>
-    <input name="user" id="user" />
-  </div>
+<div class="container">
+  <h1><%= title %></h1>
+  <div class="row row-cols-1 row-cols-md-3">
+    <form method="POST" action="/new" class="col">
+      <div class="mb-3">
+        <label for="text" class="form-label">Message</label>
+        <textarea name="text" class="form-control" id="text"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="user" class="form-label">User</label>
+        <input name="user" class="form-control" id="user" />
+      </div>
 
-  <button type="submit">Send</button>
-</form>
+      <button type="submit" class="btn btn-primary w-50">Send</button>
+    </form>
+    <div class="col"></div>
+    <div class="col"></div>
+  </div>
+</div>
+
 <%- include("_footer") %>

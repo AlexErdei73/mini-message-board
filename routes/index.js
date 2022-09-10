@@ -11,6 +11,11 @@ const messages = [
     user: "Alex73",
     added: new Date(),
   },
+  {
+    text: "This is a sily hardcoded message from a nonexistent user ...",
+    user: "Armando",
+    added: new Date(),
+  },
 ];
 
 /* GET home page. */

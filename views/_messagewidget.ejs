@@ -1,7 +1,11 @@
-<article class="message-widget">
-  <p class="message-text"><%- msg.text %></p>
-  <div class="message-user"><%= msg.user %></div>
-  <div class="message-added">
-    <%= `Added ${formatDistanceToNow(msg.added)} ago` %>
+<div class="col">
+  <div class="card h-100 bg-white" style="width: 21rem">
+    <div class="card-body">
+      <h2 class="card-title"><%= msg.user %></h2>
+      <h3 class="card-subtitle mb-2 text-muted">
+        <%= `${formatDistanceToNow(msg.added)} ago`%>
+      </h3>
+      <p class="card-text"><%- msg.text %></p>
+    </div>
   </div>
-</article>
+</div>
