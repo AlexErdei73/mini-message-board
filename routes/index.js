@@ -5,13 +5,10 @@ var datefns = require("date-fns");
 //messages to show
 const messages = [
   {
-    text: "Hi there!",
-    user: "Amando",
-    added: new Date(),
-  },
-  {
-    text: "Hello World!",
-    user: "Charles",
+    text: `Hello Odin learners! Please try my <a href='https://alexerdei73.github.io/fakebook'>Fakebook</a> website.
+    Bonus point if you know how the link added to the text field ;) You can try to find an answer by experimenting
+    with adding new messages. By the way don't follow my code in your real app, as it's bad security practice!`,
+    user: "Alex73",
     added: new Date(),
   },
 ];
